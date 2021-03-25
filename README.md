@@ -1,2 +1,2 @@
-# RestSpringBootSwaggerProject
-RestSpringBootSwaggerProject
+# SpringBootProject
+SpringBootProject
