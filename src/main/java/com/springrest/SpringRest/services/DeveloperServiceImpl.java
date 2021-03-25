@@ -1,18 +1,15 @@
 package com.springrest.SpringRest.services;
-
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
-
 import com.springrest.SpringRest.entity.Developer;
 
 @Service
 public class DeveloperServiceImpl implements DeveloperService {
-	
 	List<Developer> list;
 	
 	public DeveloperServiceImpl() {
-		list= new ArrayList();
+		list= new ArrayList<Developer>();
 		list.add(new Developer((long) 1, "Developer1", "Java, SpringBoot"));
 		list.add(new Developer((long) 2, "Developer2", "Java, SpringBoot, REST, AWS"));
 		list.add(new Developer((long) 3, "Developer3", "Java, SpringBoot, REST"));
@@ -63,10 +60,6 @@ public class DeveloperServiceImpl implements DeveloperService {
 			dev.setName(developer.getName());
 			dev.setSkills(developer.getSkills());
 			}
-			
 		}
-		
 	}
-		
-
 }

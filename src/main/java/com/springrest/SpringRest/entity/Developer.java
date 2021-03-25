@@ -1,9 +1,13 @@
 package com.springrest.SpringRest.entity;
+import io.swagger.annotations.ApiModelProperty;
 
 public class Developer {
 	
+	@ApiModelProperty
 	private Long id;
+	@ApiModelProperty
 	private String name;
+	@ApiModelProperty
 	private String skills;
 	
 	public Developer(Long id, String name, String skills) {
@@ -40,7 +44,4 @@ public class Developer {
 				+ getName() + ", getSkills()=" + getSkills() + ", getClass()=" + getClass() + ", hashCode()="
 				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
-	
-	
-
 }
